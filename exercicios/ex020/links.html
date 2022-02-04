@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links personalizados</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: blueviolet;
+        }
+
+        a:visited{
+            color: rgb(106, 27, 235);
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: rgb(195, 43, 226);
+        }
+
+        a:active{
+            color: rgb(226, 43, 113);
+        }
+
+        a::after{
+            content: " [link]";
+            font-size: smaller;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Links com Pseudo-Classes e Pseudo-Elementos</h1>
+    <ul>
+        <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+    </ul>
+</body>
+</html>

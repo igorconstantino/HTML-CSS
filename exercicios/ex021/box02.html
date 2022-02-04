@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkgray;
+        }
+
+        header{
+            background-color: white;
+        }
+
+        header>h1{
+            background-color: rgb(0, 255, 221);
+            text-align: center;
+        }
+
+        nav{
+            text-align: right;
+        }
+
+        nav>a{
+            text-decoration: none;
+            color: rgb(255, 174, 0);
+            background-color: rgba(98, 153, 155, 0.356);
+        }
+
+        nav>a:hover{
+            text-decoration: underline;
+            color: rgb(233, 105, 0);
+            background-color: thistle;
+        }
+
+        main{
+            background-color: darkgray;
+            text-align: justify;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.589);
+        }
+
+        p{
+            text-indent: 15px;
+        }
+
+        section{
+            background-color: rgb(227, 228, 231);
+            border: 1px solid rgb(73, 70, 70);
+        }
+
+        aside{
+            background-color: rgba(238, 255, 0, 0.733);
+            border-radius: 50px;
+            width: 90%;
+            margin: auto;
+        }
+
+        aside>p{
+            color: rgba(255, 0, 0, 0.507);
+            text-align: center;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Notícias</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolore cupiditate aliquid tenetur velit quia nobis quas quo maiores excepturi, laborum obcaecati commodi incidunt perspiciatis voluptatum, impedit, nisi similique odit?</p>
+        </section>
+        <section>
+            <h2>Saber mais</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores natus pariatur sed illum sapiente cumque accusamus aspernatur nulla! Culpa temporibus hic omnis voluptatibus, eveniet beatae expedita aliquid quos? Fugiat, at.</p>
+            <aside>
+                <p>curiosidades: Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolore</p>
+            </aside>
+        </section>    
+    </main>
+</body>
+</html>
