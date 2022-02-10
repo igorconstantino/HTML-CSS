@@ -5,7 +5,11 @@ Aprendendo a criar sites e utilizar repositórios
 
 <nav>
     <ul>
-        <li><a href="#">Projeto Android</li>
-        <li><a her=#>Projeto Cordel</li>
+        <li><a href="#">Projeto Android
+        <li><a her="#">Projeto Cordel
     </ul>
 </nav>
+
+<style>
+
+</style>
