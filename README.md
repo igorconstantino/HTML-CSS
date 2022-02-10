@@ -14,7 +14,7 @@ Aprendendo a criar sites e utilizar repositórios
     nav a{
         border: 1px solid black;
         background-color: 
-        padding: 5px;
+        padding: 10px;
         margin: 10px;
         border-radius: 5px;
     }
