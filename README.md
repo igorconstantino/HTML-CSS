@@ -11,10 +11,11 @@ Aprendendo a criar sites e utilizar repositórios
 </nav>
 
 <style>
-    a{
+    nav a{
         border: 1px solid black;
+        background-color: 
         padding: 5px;
+        margin: 10px;
         border-radius: 5px;
-        box-shadow: 1px 1px 4px black;
     }
 </style>
