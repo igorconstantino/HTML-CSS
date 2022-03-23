@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+    background-color: rgb(190, 190, 190);
+    padding: 10px 2% 35px 2%;
+}
+
+.logo-1{
+    float: left;
+    width: 150px;
+    height: 60px;
+    background-image: url(imagens/logo1.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo-2{
+    float: right;
+    width: 160px;
+    height: 60px;
+    background-image: url(imagens/logo2.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-with: 510px) {
+    header{
+        text-align: center;
+    }
+
+    .logo-1, .logo-2{
+        margin-top: 10px;
+        float: none;
+        display: inline-block;
+    }
+}
+
+section.cover-form{
+    width: 100%;
+    padding: 0 2%;
+}
+
+.bg{
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(imagens/bg-form.jpg);
+}
+
+.form-container{
+    z-index: 2;
+    float: right;
+    width: 400px;
+    margin-right: 40px;
+    height: 110%;
+    position: relative;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.39);
+    top: -5%;
+    background-color: white;
+}
+
+.form-container h2{
+    padding: 20px 15px;
+    font-weight: normal;
+    font-size: 18px;
+    color: black;
+    background-color: rgb(220, 220, 220);
+}
+
+.form-wraper:not(:first-child){
+    margin-top: 40px;
+}
+
+.form-wraper:last-child{
+    margin-top: 20px;
+}
+
+.form-container form{
+    margin-top: 8px;
+    padding: 15px;
+}
+
+.form-container form p{
+    font-size: 14px;
+    color: #525252;
+}
+
+.form-container form input[type=text]{
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 10px;
+}
+
+.form-container form input[type=submit]{
+    background-color: #095570;
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    height: 50px;
+    cursor: pointer;
+    border: 0;
+}
+
+section.chamada{
+    z-index: 1;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    top: -50px;
+    text-align: center;
+}
+
+section.chamada .container{
+    background-color: #69848F;
+    padding: 40px 0;
+    width: 1044px;
+}
+
+section.chamada h2{
+    width: 96%;
+    max-width: 700px;
+    display: inline-block;
+    color: white;
+    font-size: 25px;
+    font-weight: normal;
+}
