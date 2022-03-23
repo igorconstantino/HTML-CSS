@@ -24,7 +24,7 @@ html, body{
 }
 
 header{
-    background-color: rgb(190, 190, 190);
+    background-color: rgb(170, 170, 170);
     padding: 10px 2% 35px 2%;
 }
 
@@ -129,6 +129,21 @@ section.cover-form{
     border: 0;
 }
 
+@media screen and (max-width: 600px){
+    .bg{
+        padding: 40px 0;
+        height: auto;
+        text-align: center;
+    }
+
+    .form-container{
+        width: 96%;
+        max-width: 400px;
+        position: static;
+        display: inline-block;
+    }
+}
+
 section.chamada{
     z-index: 1;
     width: 100%;
@@ -139,8 +154,9 @@ section.chamada{
 }
 
 section.chamada .container{
-    background-color: #69848F;
+    background-color: #33576e;
     padding: 40px 0;
+    width: 81.6%;
 }
 
 section.chamada h2{
@@ -150,4 +166,57 @@ section.chamada h2{
     color: white;
     font-size: 25px;
     font-weight: normal;
+}
+
+.flex-mosaico{
+    display: flex;
+    margin-bottom: 2px;
+}
+
+.item-1-mosaico{
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+}
+
+.item-2-mosaico{
+    text-align: justify;
+    width: 40%;
+    padding: 70px 40px;
+    background-color: #8b8fa1;
+}
+
+.item-2-mosaico p{
+    color: #363740;
+}
+
+@media screen and (max-width: 768px) {
+    .flex-mosaico{
+        display: block;
+    }
+
+    .item-1-mosaico{
+        padding-top: 80%;
+        width: 100%;
+    }
+
+    .item-2-mosaico{
+        text-align: justify;
+        width: 100%;
+    }
+}
+
+footer{
+    margin-top: 20px;
+    background-color: #ACABB0;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p{
+    margin-top: 5px;
+}
+
+footer img{
+    width: 180px;
 }
