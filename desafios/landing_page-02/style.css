@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+    width: 100%;
+    height: 90vh;
+    padding: 25px 2%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(imagens/capa.png);
+}
+
+.logo{
+    float: left;
+    width: 180px;
+    height: 50px;
+    background-color: blueviolet;
+}
+
+header nav{
+    float: right;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav li{
+    float: left;
+    padding: 0 20px;
+}
+
+header li a{
+    color: white;
+    text-decoration: none;
+}
+
+.chamada1{
+    float: right;
+    margin: 120px 100px;
+    max-width: 500px;
+}
+
+.chamada1 h2{
+    font-weight: lighter;
+    color: white;
+    font-size: 42px;
+}
+
+.chamada1 p{
+    color: white;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+section.sessao1{
+    width: 100%;
+    background-color: #472562;
+    padding: 0px 2%; 
+}
+
+section.sessao1 .container{
+    max-width: 1000px;
+}
+
+.texto-sessao1{
+    width: 50%;
+    color: white;
+    float: left;
+}
+
+.texto-sessao1 h2{
+    font-weight: lighter;
+}
+
+.texto-sessao1 p{
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.texto-sessao1 ul{
+    font-size: 15px;
+    list-style-position: inside;
+}
+
+.texto-sessao1 ul li{
+    float: left;
+    width: 100%;
+}
+
+.btn1-texto{
+    background-color: #ff703d;
+    width: 165px;
+    height: 50px;
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 35px;
+}
+
+.device-sessao1{
+    float: left;
+    width: 50%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-image: url(imagens/device.png);
+}
