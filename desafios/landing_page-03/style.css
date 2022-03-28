@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght180;300;400;500;600&display=swap');
 
 *{
     margin: 0;
@@ -117,7 +117,7 @@ section.banner{
 }
 
 .text-banner-single:nth-of-type(2){
-    width: 200px;
+    width:180px;
     position: relative;
     left: -10px;
 }
@@ -129,7 +129,7 @@ section.banner{
 }
 
 .text-banner-single:nth-of-type(4){
-    width: 240px;
+    width: 280px;
     color: black;
     font-size: 21px;
     height: 76px;
@@ -157,7 +157,7 @@ section.banner{
     top: 20px;
 }
 
-.veiculos-destaque .line-titulo h2{
+.line-titulo h2{
     padding: 0 20px;
     position: relative;
     background-color: white;
@@ -299,11 +299,235 @@ section.banner{
     font-size: 20px;
 }
 
+.contato{
+    padding: 80px 2%;
+}
+
+.contato form{
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.contato .input-wraper{
+    float: left;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.contato input[type=text]{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 8px;
+    border: 1px solid #ccc;
+}
+
+.contato textarea{
+    width: 100%;
+    height: 100px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+.contato form .input-wraper:nth-of-type(5){
+    text-align: center;
+}
+
+.w100{
+    width: 100%;
+}
+
+.w50{
+    width: 50%;
+}
+
+.contato input[type=submit]{
+    cursor: pointer;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    display: inline-block;
+}
+
+footer{
+    padding: 40px 2%;
+    background-color: #252525;
+}
+
+footer nav{
+    float: left;
+}
+
+footer nav ul{
+    list-style-type: none;
+}
+
+footer nav ul li{
+    float: left;
+    font-size: 17px;
+    padding: 0 35px;
+    font-style: italic;
+}
+
+footer ul a{
+    color: white;
+    text-decoration: none;
+}
+
+footer p{
+    font-weight: 300;
+    float: right;
+    color: white;
+    font-size: 17px;
+    font-style: italic;
+}
+
+footer p a{
+    color: white;
+}
+
+/* Estilo da página de vendas começa aqui */
+
+.venda{
+    min-height: 90%;
+    padding: 80px 0;
+}
+
+.content-venda{
+    margin-top: 40px;
+}
+
+.sidebar{
+    float: left;
+    width: 30%;
+}
+
+.search1{
+    width: 90%;
+}
+
+.search1 h2{
+    font-size: 24px;
+    color: black;
+    font-weight: normal;
+}
+
+.search1 .barra-preco{
+    width: 100%;
+    height: 20px;
+    margin-top: 8px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    position: relative;
+}
+
+.barra-preco-fill{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30%;
+    height: 19px;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(200,200 ,200 ));
+}
+
+.pointer-barra{
+    position: absolute;
+    width: 20px;
+    height: 26px;
+    left: calc(30% - 10px);
+    top: -3px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(180,180,180));
+    border: 1px solid rgba(0, 0, 0, 0.493);
+}
+
+.valor-pesquisa{
+    margin-top: 8px;
+}
+
+.valor-pesquisa p{
+    color: black;
+    font-size: 15px;
+}
+
+.valor-pesquisa p:nth-of-type(1){
+    float: left;
+}
+
+.valor-pesquisa p:nth-of-type(2){
+    float: right;
+}
+
+.search2{
+    margin-top: 40px;
+}
+
+.search2 h2{
+    font-size: 24px;
+    color: black;
+    font-weight: normal;
+}
+
+.form-venda-wraper{
+    margin-top: 5px;
+}
+
+.form-venda-wraper input[type=checkbox]{
+    display: none;
+}
+
+.form-venda-wraper label{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.form-venda-wraper input[type=checkbox]:checked + label > .circle{
+    display: block;
+}
+
+.circle{
+    display: none;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: black;
+    left: 6px;
+    top: 6px;
+}
+
+.form-venda-wraper span{
+    padding: 0 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.vitrine-venda{
+    float: left;
+    width: 70%;
+}
+
+.vitrine-venda .vitrine-destaque{
+    margin-top: 20px;
+}
+
+/* Media queries começa aqui */
+
 @media  screen and (max-width: 1400px) {
     
     section.banner{
         background-size: 90% auto;
-        background-position: 200% 100%;
+        background-position:180% 100%;
     }
 }
 
@@ -358,6 +582,41 @@ section.banner{
     .half1, .half2{
         width: 100%;
         padding: 80px 4%;
+    }
+
+    .w50{
+        width: 100%;
+    }
+
+    footer nav{
+        display: none;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    footer p{
+        float: none;
+    }
+
+    .sidebar{
+        width: 100%;
+        text-align: center;
+    }
+
+    .search1{
+        display: inline-block;
+    }
+
+    .search2{
+        display: inline-block;
+        text-align: left;
+    }
+
+    .vitrine-venda{
+        width: 100%;
+        text-align: center;
     }
 
 }
