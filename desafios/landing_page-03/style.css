@@ -219,16 +219,20 @@ section.banner{
     border-bottom: 4px solid #b21e1e;
 }
 
+.servicos-descricao{
+    display: flex;
+}
+
 .half1{
-    float: left;
     width: 50%;
-    text-align: center;
+    text-align: right;
     padding: 90px 0;
     background-color: #242424;
     color: white;
 }
 
 .half1-wraper{
+    padding-right: 30%;
     text-align: left;
     display: inline-block;
 }
@@ -256,7 +260,6 @@ section.banner{
 }
 
 .half2{
-    float: left;
     width: 50%;
     padding: 90px 100px;
     background-color: #eb2d2d;
@@ -275,8 +278,14 @@ section.banner{
 }
 
 .navigation{
+    width: 100%;
+    max-width: 700px;
     float: left;
     margin-top: 30px;
+}
+
+.arrows{
+    float: left;
 }
 
 .navigation img{
@@ -285,7 +294,9 @@ section.banner{
 }
 
 .nome-depoimento{
-    
+    float: right;
+    color: #252525;
+    font-size: 20px;
 }
 
 @media  screen and (max-width: 1400px) {
@@ -329,6 +340,24 @@ section.banner{
 
     nav.mobile{
         display: block;
+    }
+
+    section.servicos-descricao{
+        flex-direction: column;
+    }
+
+    .half1{
+        text-align: center;
+    }
+
+    .half1-wraper{
+        text-align: left;
+        padding-right: 0;
+    }
+
+    .half1, .half2{
+        width: 100%;
+        padding: 80px 4%;
     }
 
 }
